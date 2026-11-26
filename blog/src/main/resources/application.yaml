@@ -13,3 +13,12 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
         show-sql: true
+jwt:
+  # Generate a 32-byte Base64 secret in PowerShell:
+  # $bytes = New-Object byte[] 32
+  # $rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+  # $rng.GetBytes($bytes)
+  # $secret = [Convert]::ToBase64String($bytes)
+  # $secret
+  secret: yn6I9gnXOhxmUWFP6z2laLkalPAl8H2UUvzjJRA/7RE=
+  expiration: 86400000
